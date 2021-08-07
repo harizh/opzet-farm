@@ -1,4 +1,4 @@
-<div class="jumbotron text-center">
+<!-- <div class="jumbotron text-center">
   <h1>My First Bootstrap Page</h1>
   <p>Resize this responsive page to see the effect!</p> 
 </div>
@@ -19,6 +19,20 @@
       <h3>Column 3</h3>        
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div> -->
+
+<p>
+  <button type="button" class="btn btn-outline-primary" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+    aria-controls="collapseExample">
+    Toggle
+  </button>
+</p>
+<div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+  <div class="card">
+    <div class="card-body">
+      You can collapse this card by clicking Toggle
     </div>
   </div>
 </div>
