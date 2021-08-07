@@ -22,7 +22,7 @@
     </div>
   </div>
 </div> -->
-
+<div class="jumbotron">
 <p>
   <button type="button" class="btn btn-outline-primary" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
     aria-controls="collapseExample">
@@ -32,7 +32,8 @@
 <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
   <div class="card">
     <div class="card-body">
-      You can collapse this card by clicking Toggle
+      <img src="assets/images/img1.jpg" width="200">
     </div>
   </div>
+</div>
 </div>
