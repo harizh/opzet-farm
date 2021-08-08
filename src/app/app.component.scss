@@ -1,3 +1,183 @@
-.jumbotron {
-	background-image: url('../assets/images/wp.jpg');
+.bgImg {
+	background-image: url('../assets/images/bg-shed.jpg');
+	height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	position: relative;
+}
+.leftTrays{
+	position: absolute;
+	top: 35%;
+    left: 5%;
+	display: flex;
+	flex-direction: column;
+}
+.rightTrays{
+	position: absolute;
+	top: 35%;
+	right: 5%;
+	display: flex;
+	flex-direction: column;
+}
+.tray0{
+	position: relative;
+    margin-bottom: -9.5rem;
+    transform: scale(0.75);
+    margin-left: 20%;
+}
+.tray1{
+	position: relative;
+    margin-bottom: -9.5rem;
+    transform: scale(0.8);
+    margin-left: 16%;
+}
+.tray2{
+	position: relative;
+	margin-bottom: -9.5rem;
+	transform: scale(0.95);
+	 margin-left: 8%;
+}
+.tray3{
+	position: relative;
+	transform: scale(1);
+	left: 4%;
+}
+.tray4{
+	position: relative;
+    margin-bottom: -9.5rem;
+    transform: scale(0.75);
+    margin-left: -20%;
+}
+.tray5{
+	position: relative;
+    margin-bottom: -9.5rem;
+    transform: scale(0.8);
+    margin-left: -16%;
+}
+.tray6{
+	position: relative;
+	margin-bottom: -9.5rem;
+	transform: scale(0.9);
+	margin-left: -10%;
+}
+.tray7{	
+	position: relative;
+	transform: scale(1);
+	margin-left: -4%;
+}
+.tank1{
+	position: absolute;
+	left: 8%;
+	bottom: 20%;
+}
+.tank2{
+	position: absolute;
+	right: 10%;
+	bottom: 20%;
+}
+.leftTrays img{
+	width: 22rem;
+}
+
+.tank2 .waterFlow{
+	 margin-left: 5%;
+ }
+ .tank1 .waterFlow{
+	     margin-left: 5%;
+ }
+
+@media only screen and (max-width: 1600px) {
+ .leftTrays{
+	top: 40%;
+ }
+ .rightTrays{
+	top: 40%;
+ }
+}
+
+@media only screen and (max-width: 1400px) {
+ .leftTrays{
+	bottom: 15%;
+	top: auto;
+ }
+ .rightTrays{
+	bottom: 15%;
+	top: auto;
+ }
+ .tank1{
+	 bottom: 15%;
+	 	top: auto;
+ }
+  .tank2{
+	 bottom: 15%;
+	 	top: auto;
+ }
+ .tray7{
+	 margin-left: 0%;
+ }
+ .tray6{
+	     margin-left: -5%;
+ }
+  .tray5{
+	     margin-left: -9%;
+ }
+  .tray4{
+	     margin-left: -11%;
+ }
+ .tank2 .waterFlow{
+	 margin-left: 13%;
+ }
+ .tank1 .waterFlow{
+	     margin-left: 5%;
+ }
+}
+@media only screen and (max-width: 1200px) {
+ .leftTrays{
+	bottom: 10%;
+	left: 2%;
+	top: auto;
+ }
+ .rightTrays{
+	bottom: 10%;
+	right: 2%;
+	top: auto;
+ }
+ .tank1{
+	 bottom: 10%;
+	 	top: auto;
+ }
+  .tank2{
+	 bottom: 10%;
+	 	top: auto;
+ }
+ .tray7{
+	 margin-left: 0%;
+ }
+ .tray6{
+	     margin-left: -5%;
+ }
+  .tray5{
+	     margin-left: -9%;
+ }
+  .tray4{
+	     margin-left: -11%;
+ }
+ .tank2 .waterFlow{
+	 margin-left: 18%;
+ }
+ .tank1 .waterFlow{
+	     margin-left: -5%;
+ }
+}
+
+
+.waterFlow{
+	position: relative;
+	z-index: 999;
+}
+.tank1 img, .tank2 img{
+	position: absolute;
+	top: 0;
 }
