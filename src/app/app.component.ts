@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'opzet-farm';
   public isCollapsed = false;
+  public selectedIndex=1; //default
 }
