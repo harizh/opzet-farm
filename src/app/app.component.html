@@ -45,9 +45,9 @@
           <div class="row no-gutters">
 
             <div class="col-md-3 indiDiv">
-                <div class="greenIndicator indicator show"></div>
-                <div class="orangeIndicator indicator"></div>
-                <div class="redIndicator indicator"></div>
+                <div class="greenIndicator indicator " [ngClass]="{'show': selectedIndex==1}"></div>
+                <div class="orangeIndicator indicator show" [ngClass]="{'show': selectedIndex==2}"></div>
+                <div class="redIndicator indicator" [ngClass]="{'show': selectedIndex==3}"></div>
             </div>
 
             <div class="col-md-9 bordCont">
@@ -63,15 +63,15 @@
         <ul>
           <li>
             <img src="assets/images/humidity.png">
-            <div>Humidity<br><span>74.52 &#8451;</span></div>
+            <div>Humidity<br><span>{{humidity}} %</span></div>
           </li>
           <li>
             <img src="assets/images/thermometer.png">
-            <div>Temarature<br><span>74.52 &#8451;</span></div>
+            <div>Temarature<br><span>{{temarature}} &#8451;</span></div>
           </li>
           <li>
             <img src="assets/images/conductivity.png">
-            <div>Conductivity<br><span>74.52 &#8451;</span></div>
+            <div>Conductivity<br><span>{{conductivity}} &#8451;</span></div>
           </li>
         </ul>
       </div>
@@ -105,9 +105,9 @@
   </div>
   <div class="btn-div">
     <div class="mauto">
-      <button class="btn btn-primary" (click)="selectedIndex=1" [ngClass]="{'selected': selectedIndex==1}" >Button 1</button>
-      <button class="btn btn-primary" (click)="selectedIndex=2" [ngClass]="{'selected': selectedIndex==2}" >Button 2</button>
-      <button class="btn btn-primary" (click)="selectedIndex=3" [ngClass]="{'selected': selectedIndex==3}" >Button 3</button>
+      <button class="btn btn-primary" (click)="selectedIndex=1;generateRandom()" [ngClass]="{'selected': selectedIndex==1}" >Button 1</button>
+      <button class="btn btn-primary" (click)="selectedIndex=2;generateRandom()" [ngClass]="{'selected': selectedIndex==2}" >Button 2</button>
+      <button class="btn btn-primary" (click)="selectedIndex=3;generateRandom()" [ngClass]="{'selected': selectedIndex==3}" >Button 3</button>
     </div>
   </div>
 </div>
