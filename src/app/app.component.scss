@@ -88,6 +88,119 @@
 	margin-left: 5%;
 }
 
+.waterFlow{
+	position: relative;
+	z-index: 999;
+}
+.tank1 img, .tank2 img{
+	position: absolute;
+	top: 0;
+}
+
+.btn-div {
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	width: 100%;
+	button {
+		margin: 10px;
+	}
+}
+.selected{
+    border-color: #28a745 !important;
+	background-color: #28a745 !important;;
+}
+.indicator{
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	// border: 3px solid #fff;
+	opacity: 0.5;
+}
+.greenIndicator{	
+	background-color: #33cd2f;	
+}
+.orangeIndicator{
+	background-color: #ff9501;
+}
+.redIndicator{
+	background-color: #d60103;
+}
+.indicator.show{
+	border: 3px solid #fff;
+	opacity: 1;
+}
+.indiDiv{
+	background-color: rgb(77, 77, 77); 
+	height: 8rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.bordCont{
+	padding: 10px !important;
+	h4{
+		font-size: 1rem;
+	}
+	p{
+		font-size: 0.8rem;
+		line-height: 15px;
+		margin-bottom: 0;
+	}
+}
+.indBoard{
+	position: relative; 
+	z-index: 9999; 
+	top: 15%;
+	.bgWh{
+		 background-color: #fff; 
+		 height: 8rem; 
+		 padding: 0;
+	}
+}
+
+.waterwave::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: red;
+}
+.valueBoard{
+	position: relative; 
+	z-index: 9999; 
+	top: 40%;
+	.bgWh{
+		 background-color: #fff; 
+		 padding: 1rem;
+		 ul{
+			 list-style: none;
+			 padding-left: 0;
+			 li{
+				 display: flex;
+				 margin-bottom: 1rem;
+				 align-items: center;
+				 img{
+					 width: auto;
+					height: 2rem;
+					margin-right: 10px;
+				 }
+				 div{
+					 font-size: 0.9rem;
+					 font-weight: 500;
+					 span{
+						 font-weight: 900;
+					 }
+				 }
+			 }
+		 }
+	}
+
+}
+
 @media only screen and (max-width: 1600px) {
 	.leftTrays{
 		top: 40%;
@@ -132,6 +245,12 @@
 	.tank1 .waterFlow{
 		margin-left: 5%;
 	}
+	.indBoard{
+		top: 30%;
+	}
+	.valueBoard{
+		top: 50%;
+	}
 }
 @media only screen and (max-width: 1200px) {
 	.leftTrays{
@@ -170,28 +289,58 @@
 	.tank1 .waterFlow{
 		margin-left: -5%;
 	}
-}
-
-
-.waterFlow{
-	position: relative;
-	z-index: 999;
-}
-.tank1 img, .tank2 img{
-	position: absolute;
-	top: 0;
-}
-
-.btn-div {
-	position: fixed;
-	bottom: 0;
-	display: flex;
-	width: 100%;
-	button {
-		margin: 10px;
+	.indBoard{
+		top: 40%;
+	}
+	.valueBoard{
+		top: 50%;
 	}
 }
-.selected{
-    border-color: #28a745 !important;
-	background-color: #28a745 !important;;
+
+@media only screen and (max-width: 768px){
+	.leftTrays{
+		bottom: 24%;
+		left: -6%;
+		top: auto;
+	}
+	.rightTrays{
+		bottom: 23%;
+		right: -6%;
+		top: auto;
+	}
+	.tank1{
+		bottom: 23%;
+		top: auto;
+		left: 3%;
+	}
+	.tank2{
+		bottom: 23%;
+		top: auto;
+		    right: 5%;
+	}
+	.valueBoard{
+		top: 70%;	
+		.bgWh{
+			max-width: 80%;
+    		flex: 0 0 100%;
+			ul{
+				display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+			}
+		}	
+	}
+	.tray4, .tray0{
+		display: none;
+	}
+	.btn-div{
+    position: fixed;
+    top: 120px;
+    display: flex;
+    width: 100%;
+	bottom: auto;
 }
+
+}
+
+

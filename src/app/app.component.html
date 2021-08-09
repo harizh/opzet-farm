@@ -38,7 +38,46 @@
 </div>
 </div> -->
 <div class="container-fluid p-0 bgImg">
-  <div class="container" style="position: relative;  height: 100%;">    
+  <div class="container" style="position: relative;  height: 100%;"> 
+    
+    <div class="row d-flex justify-content-center indBoard">
+      <div class="col-lg-2 col-md-4 bgWh">
+          <div class="row no-gutters">
+
+            <div class="col-md-3 indiDiv">
+                <div class="greenIndicator indicator show"></div>
+                <div class="orangeIndicator indicator"></div>
+                <div class="redIndicator indicator"></div>
+            </div>
+
+            <div class="col-md-9 bordCont">
+                <h4>Caution</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit consectetur adipisicing elit. </p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="row d-flex justify-content-center valueBoard">
+      <div class="col-lg-2 col-md-4 bgWh">
+        <ul>
+          <li>
+            <img src="assets/images/humidity.png">
+            <div>Humidity<br><span>74.52 &#8451;</span></div>
+          </li>
+          <li>
+            <img src="assets/images/thermometer.png">
+            <div>Temarature<br><span>74.52 &#8451;</span></div>
+          </li>
+          <li>
+            <img src="assets/images/conductivity.png">
+            <div>Conductivity<br><span>74.52 &#8451;</span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
     <div class="leftTrays">
       <img src="assets/images/hydroponic{{selectedIndex}}.png" class="tray0">
       <img src="assets/images/hydroponic{{selectedIndex}}.png" class="tray1">
@@ -47,7 +86,7 @@
     </div>
     <div class="tank1">   
       <div class="waterFlow"  style="width: 100%; height: 80px; width: 300px; overflow: hidden; border: 3px solid #dadada;">
-        <img src="assets/images/waterflow.gif" class="waterwave">
+        <img src="assets/images/waterflow{{selectedIndex}}.gif" class="waterwave">
         <img src="assets/images/tank{{selectedIndex}}.png" width="300" class="tankwater" style="height: 80px;">
       </div>
     </div>
@@ -59,7 +98,7 @@
     </div>
     <div class="tank2">
       <div class="waterFlow" style="width: 100%; height: 80px; width: 300px; overflow: hidden; border: 3px solid #dadada;">
-        <img src="assets/images/waterflow.gif" class="waterwave">
+        <img src="assets/images/waterflow{{selectedIndex}}.gif" class="waterwave">
         <img src="assets/images/tank{{selectedIndex}}.png" width="300" class="tankwater" style="height: 80px;">
       </div>
     </div>
