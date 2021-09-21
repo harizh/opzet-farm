@@ -8,15 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'opzet-farm';
   public isCollapsed = false;
-  public selectedIndex = 1; //default
+  public selectedIndex = 1; //defaultx
   public humidity = this.getRandomNum(100,50); //default
   public temarature =  this.getRandomNum(100,50); //default
-  public conductivity =  this.getRandomNum(100,50); //default
+  public conductivity =  this.getRandomNum(1,10); //default
 
   public textDisplay = [
-  {heading: "Caution 1", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit consectetur adipisicing elit."},
-  {heading: "Caution 2", description: "Et harum quidem rerum facilis est et expedita distinctio adipisicing."},
-  {heading: "Caution 3", description: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores."},
+  {heading: "OPTIMUM", description: "Growth is high with the present optimum condition."},
+  {heading: "CAUTION", description: "Growth likely due to ongoing variations."},
+  {heading: "WARNING", description: "Growth is seriously affected due to adverse condition"},
   ];
 
   generateRandom() {

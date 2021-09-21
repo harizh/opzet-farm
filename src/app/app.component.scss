@@ -21,9 +21,21 @@
 	display: flex;
 	flex-direction: column;
 }
+.tray-2{
+	position: relative;
+	margin-bottom: -10.5rem;
+	transform: scale(0.7);
+	margin-left: 25%;
+}
+.tray-1{
+	position: relative;
+	margin-bottom: -10rem;
+	transform: scale(0.7);
+	margin-left: 24%;
+}
 .tray0{
 	position: relative;
-	margin-bottom: -9.5rem;
+	margin-bottom: -9.8rem;
 	transform: scale(0.75);
 	margin-left: 20%;
 }
@@ -46,23 +58,35 @@
 }
 .tray4{
 	position: relative;
-	margin-bottom: -9.5rem;
+	margin-bottom: -10.5rem;
+	transform: scale(0.7);
+	margin-left: -26%;
+}
+.tray5{
+	position: relative;
+	margin-bottom: -10.5rem;
+	transform: scale(0.7);
+	margin-left: -24%;
+}
+.tray6{
+	position: relative;
+	margin-bottom: -10rem;
 	transform: scale(0.75);
 	margin-left: -20%;
 }
-.tray5{
+.tray7{
 	position: relative;
 	margin-bottom: -9.5rem;
 	transform: scale(0.8);
 	margin-left: -16%;
 }
-.tray6{
+.tray8{
 	position: relative;
 	margin-bottom: -9.5rem;
 	transform: scale(0.9);
 	margin-left: -10%;
 }
-.tray7{	
+.tray9{	
 	position: relative;
 	transform: scale(1);
 	margin-left: -4%;
@@ -78,6 +102,9 @@
 	bottom: 20%;
 }
 .leftTrays img{
+	width: 22rem;
+}
+.rightTrays img{
 	width: 22rem;
 }
 
@@ -108,7 +135,7 @@
 	}
 }
 .selected{
-    border-color: #28a745 !important;
+	border-color: #28a745 !important;
 	background-color: #28a745 !important;;
 }
 .indicator{
@@ -155,9 +182,9 @@
 	z-index: 9999; 
 	top: 15%;
 	.bgWh{
-		 background-color: #fff; 
-		 height: 8rem; 
-		 padding: 0;
+		background-color: #fff; 
+		height: 8rem; 
+		padding: 0;
 	}
 }
 
@@ -170,178 +197,138 @@
 	height: 100%;
 	background-color: red;
 }
+.light-row{
+	position: absolute;
+	top: 10%;
+	width: 100%;
+}
+.light-row .container{
+	width: 100%;
+	position: relative;
+}
+.light-row img{
+	width: 10rem;
+}
+.light-left{
+	left: 22%;
+	position: absolute;
+}
+.light-right{
+	right: 20%;
+	position: absolute;
+}
 .valueBoard{
 	position: relative; 
 	z-index: 9999; 
 	top: 40%;
 	.bgWh{
-		 background-color: #fff; 
-		 padding: 1rem;
-		 ul{
-			 list-style: none;
-			 padding-left: 0;
-			 li{
-				 display: flex;
-				 margin-bottom: 1rem;
-				 align-items: center;
-				 img{
-					 width: auto;
+		background-color: #fff; 
+		padding: 1rem;
+		ul{
+			list-style: none;
+			padding-left: 0;
+			li{
+				display: flex;
+				margin-bottom: 1rem;
+				align-items: center;
+				img{
+					width: auto;
 					height: 2rem;
 					margin-right: 10px;
-				 }
-				 div{
-					 font-size: 0.9rem;
-					 font-weight: 500;
-					 span{
-						 font-weight: 900;
-					 }
-				 }
-			 }
-		 }
-	}
-
-}
-
-@media only screen and (max-width: 1600px) {
-	.leftTrays{
-		top: 40%;
-	}
-	.rightTrays{
-		top: 40%;
-	}
-}
-
-@media only screen and (max-width: 1400px) {
-	.leftTrays{
-		bottom: 15%;
-		top: auto;
-	}
-	.rightTrays{
-		bottom: 15%;
-		top: auto;
-	}
-	.tank1{
-		bottom: 15%;
-		top: auto;
-	}
-	.tank2{
-		bottom: 15%;
-		top: auto;
-	}
-	.tray7{
-		margin-left: 0%;
-	}
-	.tray6{
-		margin-left: -5%;
-	}
-	.tray5{
-		margin-left: -9%;
-	}
-	.tray4{
-		margin-left: -11%;
-	}
-	.tank2 .waterFlow{
-		margin-left: 13%;
-	}
-	.tank1 .waterFlow{
-		margin-left: 5%;
-	}
-	.indBoard{
-		top: 30%;
-	}
-	.valueBoard{
-		top: 50%;
-	}
-}
-@media only screen and (max-width: 1200px) {
-	.leftTrays{
-		bottom: 10%;
-		left: 2%;
-		top: auto;
-	}
-	.rightTrays{
-		bottom: 10%;
-		right: 2%;
-		top: auto;
-	}
-	.tank1{
-		bottom: 10%;
-		top: auto;
-	}
-	.tank2{
-		bottom: 10%;
-		top: auto;
-	}
-	.tray7{
-		margin-left: 0%;
-	}
-	.tray6{
-		margin-left: -5%;
-	}
-	.tray5{
-		margin-left: -9%;
-	}
-	.tray4{
-		margin-left: -11%;
-	}
-	.tank2 .waterFlow{
-		margin-left: 18%;
-	}
-	.tank1 .waterFlow{
-		margin-left: -5%;
-	}
-	.indBoard{
-		top: 40%;
-	}
-	.valueBoard{
-		top: 50%;
-	}
-}
-
-@media only screen and (max-width: 768px){
-	.leftTrays{
-		bottom: 24%;
-		left: -6%;
-		top: auto;
-	}
-	.rightTrays{
-		bottom: 23%;
-		right: -6%;
-		top: auto;
-	}
-	.tank1{
-		bottom: 23%;
-		top: auto;
-		left: 3%;
-	}
-	.tank2{
-		bottom: 23%;
-		top: auto;
-		    right: 5%;
-	}
-	.valueBoard{
-		top: 70%;	
-		.bgWh{
-			max-width: 80%;
-    		flex: 0 0 100%;
-			ul{
-				display: flex;
-    justify-content: space-between;
-    margin-bottom: 0;
+				}
+				div{
+					font-size: 0.9rem;
+					font-weight: 500;
+					span{
+						font-weight: 900;
+					}
+				}
 			}
-		}	
+		}
 	}
-	.tray4, .tray0{
-		display: none;
-	}
-	.btn-div{
-    position: fixed;
-    top: 120px;
-    display: flex;
-    width: 100%;
-	bottom: auto;
-}
 
 }
+
+
+
+// @media only screen and (max-width: 1400px) {
+// 	.leftTrays{
+// 		bottom: 15%;
+// 		top: auto;
+// 	}
+// 	.rightTrays{
+// 		bottom: 15%;
+// 		top: auto;
+// 	}
+// 	.tank1{
+// 		bottom: 15%;
+// 		top: auto;
+// 	}
+// 	.tank2{
+// 		bottom: 15%;
+// 		top: auto;
+// 		right: 11%;
+// 	}
+// 	.tray4{
+// 		    margin-left: -17%;
+// 	}
+// 	.tray5{
+// 		margin-left: -14%;
+// 		transform: scale(0.75);
+// 	}
+// 	.tray9{
+// 		margin-left: 0%;
+// 	}
+// 	.tray8{
+// 		margin-left: -3%;
+// 		transform: scale(0.95);
+// 	}
+// 	.tray7{
+// 		    transform: scale(0.9);
+//     margin-left: -6%;
+// 	}
+// 	.tray6{
+// 		    transform: scale(0.8);
+//     margin-left: -11%;
+// 	}
+// 	.tank2 .waterFlow{
+// 		margin-left: 13%;
+// 	}
+// 	.tank1 .waterFlow{
+// 		margin-left: 5%;
+// 	}
+// 	.indBoard{
+// 		top: 37%;
+// 	}
+// 	.valueBoard{
+// 		top: 50%;
+// 	}
+// 	.light-row{
+// 		top: 25%;
+// 	}
+// }
+
+
+
+div#effect3d  {         
+	margin-bottom: 0;
+	margin-top: 0;
+	border-top-width:4px;
+	border-bottom-width:1px;
+	-webkit-transform: perspective(500px) rotateX(35deg);    
+	transform: perspective(500px) rotateX(35deg);  
+}
+
+
+ .light-row{
+    top: 0% !important;
+}
+.tank1{
+	bottom: 13% !important;
+}
+.tank2{
+	bottom: 14% !important;
+}
+
 
 

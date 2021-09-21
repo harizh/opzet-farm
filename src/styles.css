@@ -1,1 +1,503 @@
 /* You can add global styles to this file, and also import other style files */
+@media (min-width: 1601px) {
+	.leftTrays img{
+        width: 24rem !important;
+    }
+    .rightTrays img{
+        width: 24rem !important;
+    }
+    .leftTrays{
+        top: auto !important;
+        left: 0% !important;
+        bottom: 15%;
+    }
+    .rightTrays{
+        top: auto !important;
+        right: 0% !important;
+        bottom: 15%;
+    }
+    .tray-2{
+        margin-left: 16% !important;
+    }
+    .tray-1{
+        margin-left: 15% !important;
+    }
+    .tray0{
+        margin-left: 12% !important;
+        margin-bottom: -10rem !important;
+    }
+    .tray1{
+        margin-left: 8% !important;
+    }
+    .tray2{
+        margin-left: 0% !important;
+    }
+    .tray3{
+        left: -4% !important;
+    }
+    .tank1{
+        left: 1% !important;
+        bottom: 16% !important; 
+    }
+    .tank2{
+        right: 1% !important;
+        bottom: 16% !important;
+    }
+    .tray9{
+        margin-left: 12% !important;
+    }
+    .tray8{
+        margin-left: 4% !important;
+    }
+    .tray7{
+        margin-left: -3% !important;
+    }
+    .tray6{
+        margin-left: -5% !important;
+    }
+    .tray5{
+        margin-left: -10% !important;
+    }
+    .tray4{
+        margin-left: -12% !important;
+    }
+    .light-row{
+        top: 4% !important;
+    }
+    .light-left{
+        left: 18% !important;
+    }
+    .light-right{
+        right: 16% !important;
+    }
+    
+}
+
+
+@media only screen and (min-width: 1401px) and (max-width: 1600px) {
+    .leftTrays{
+		top: 45% !important;
+	}
+	.rightTrays{
+		top: 45% !important;
+	}
+	.valueBoard{
+		top: 48% !important;
+	}
+	.tank1{
+		bottom: 16% !important;
+	}
+	.tank2{
+		bottom: 16% !important;
+	}
+	.light-row{
+		top: 12% !important;
+	}
+	.indBoard{
+		top: 24% !important;
+	}
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+    .leftTrays{
+		bottom: 10% !important;
+        left: 9% !important;
+		top: auto !important;
+	}
+	.rightTrays{
+		bottom: 10% !important;
+		right: 9% !important;
+		top: auto !important;
+	}
+	.tank1{
+		bottom: 10% !important;
+        top: auto !important;
+        left: 14% !important;
+	}
+	.tank2{
+		bottom: 11% !important;
+        top: auto !important;
+        right: 13% !important;
+	}
+	.tray7{
+		margin-left: -6% !important;
+	}
+	.tray6{
+		margin-left: -11% !important;
+	}
+	.tray5{
+		margin-left: -14% !important;
+	}
+	.tray4{
+		margin-left: -17% !important;
+	}
+	.tank2 .waterFlow{
+		margin-left: 18% !important;
+	}
+	.tank1 .waterFlow{
+		margin-left: -5% !important;
+	}
+	.indBoard{
+		top: 21% !important;
+	}
+	.valueBoard{
+		top: 34% !important;
+        left: 3%;
+	}
+    .leftTrays{
+        width: 20rem !important;
+    }
+    .rightTrays{
+        width: 20rem !important;
+    }
+    .light-row{
+        top: 4% !important;
+    }
+    .light-row img{
+        width: 9rem !important;
+    }
+    .light-left{
+        left: 27% !important;
+    }
+    .light-right{
+        right: 23% !important;
+    }
+}
+@media only screen and (min-width: 998px) and (max-width: 1200px) {
+    .leftTrays{
+		bottom: 14% !important;
+        left: 9% !important;
+		top: auto !important;
+	}
+	.rightTrays{
+		bottom: 14% !important;
+		right: 9% !important;
+		top: auto !important;
+	}
+	.tank1{
+		bottom: 14% !important;
+        top: auto !important;
+        left: 14% !important;
+	}
+	.tank2{
+		bottom: 14% !important;
+        top: auto !important;
+        right: 16% !important;
+	}
+	.tray7{
+		margin-left: -6% !important;
+	}
+	.tray6{
+		margin-left: -11% !important;
+	}
+	.tray5{
+		margin-left: -14% !important;
+	}
+	.tray4{
+		margin-left: -17% !important;
+	}
+	.tank2 .waterFlow{
+		margin-left: 18% !important;
+	}
+	.tank1 .waterFlow{
+		margin-left: -5% !important;
+	}
+	.indBoard{
+		top: 33% !important;
+	}
+	.valueBoard{
+		top: 34% !important;
+        left: 3%;
+	}
+    .leftTrays{
+        width: 20rem !important;
+    }
+    .rightTrays{
+        width: 20rem !important;
+    }
+    .light-row{
+        top: 20% !important;
+    }
+    .light-row img{
+        width: 7rem !important;
+    }
+    .light-left{
+        left: 27% !important;
+    }
+    .light-right{
+        right: 23% !important;
+    }
+    /* .tray-2,.tray-1,.tray4, .tray5{
+        display: none !important;
+    } */
+
+    .rightTrays img{
+        width: 20rem !important;
+    }
+     .leftTrays img{
+        width: 20rem !important;
+    }
+    .waterFlow{
+        width: 275px !important; 
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 997px) {
+    .btn-div{
+        top: 45px;
+    }
+    .leftTrays{
+		bottom: 10% !important;
+        left: 0% !important;
+		top: auto !important;
+	}
+	.rightTrays{
+		bottom: 10% !important;
+		right: 0% !important;
+		top: auto !important;
+	}
+	.tank1{
+		bottom: 12% !important;
+        top: auto !important;
+        left: 8% !important;
+	}
+	.tank2{
+		bottom: 12% !important;
+        top: auto !important;
+        right: 9% !important;
+	}
+	.tray7{
+		margin-left: -7% !important;
+        transform: scale(0.9) !important;
+	}
+	.tray6{
+		margin-left: -7% !important;
+        transform: scale(0.85) !important;
+        margin-bottom: -9.5rem !important;
+	}
+	.tray5{
+		margin-left: -14% !important;
+        margin-bottom: -9.5rem !important;
+	}
+	.tray4{
+		margin-left: -10% !important;
+        transform: scale(0.8) !important;
+        margin-bottom: -9.5rem !important;
+	}
+	.tank2 .waterFlow{
+		margin-left: 18% !important;
+	}
+	.tank1 .waterFlow{
+		margin-left: -5% !important;
+	}
+	.indBoard{
+		top: 33% !important;
+	}
+	.valueBoard{
+		top: 34% !important;
+        left: 3%;
+	}
+    .leftTrays{
+        width: 20rem !important;
+    }
+    .rightTrays{
+        width: 20rem !important;
+    }
+    .light-row{
+        top: 20% !important;
+    }
+    .light-row img{
+        width: 5rem !important;
+    }
+    .light-left{
+        left: 18% !important;
+    }
+    .light-right{
+        right: 13% !important;
+    }
+    /* .tray-2,.tray-1,.tray4, .tray5{
+        display: none !important;
+    } */
+
+    .rightTrays img{
+        width: 20rem !important;
+    }
+     .leftTrays img{
+        width: 20rem !important;
+    }
+    .waterFlow{
+        width: 275px !important; 
+    }
+    .tray2{
+        margin-left: 5% !important;
+    }
+    .tray1{
+        transform: scale(0.9) !important;
+        margin-left: 7% !important;
+    }
+    .tray0{
+       transform: scale(0.9) !important;
+        margin-left: 9% !important;
+    }
+    .tray-1{
+        transform: scale(0.85) !important;
+        margin-left: 10% !important;
+    }
+    .tray-2{
+        margin-bottom: -9.5rem !important;
+        transform: scale(0.85) !important;
+        margin-left: 11% !important;
+    }
+    .tray9{
+        margin-left: 0% !important;
+    }
+    .tray8{
+        transform: scale(0.95) !important;
+        margin-left: -3% !important;
+    }
+    div#effect3d{
+        transform: none !important;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+    .rightTrays{
+        display: none !important;
+    }
+     div#effect3d{
+        display: none !important;
+    }
+    .tank2{
+        display: none !important;
+    }
+    .indiDiv{
+        width: 30% !important;
+        height: 7rem !important;
+    }
+    .bordCont{
+        width: 70% !important;
+    }
+    .indBoard .bgWh{
+        width: 65%;
+        height: 7rem !important;
+    }
+    .indicator{
+        width: 24px !important;
+    height: 24px !important;
+    }
+    
+    .leftTrays{
+		bottom: 8% !important;
+        left: 0% !important;
+		top: auto !important;
+	}
+	.rightTrays{
+		bottom: 10% !important;
+		right: 0% !important;
+		top: auto !important;
+	}
+	.tank1{
+		bottom: 10% !important;
+        top: auto !important;
+        left: 16% !important;
+	}
+	.tank2{
+		bottom: 12% !important;
+        top: auto !important;
+        right: 9% !important;
+	}
+	.tray7{
+		margin-left: -7% !important;
+        transform: scale(0.9) !important;
+	}
+	.tray6{
+		margin-left: -7% !important;
+        transform: scale(0.85) !important;
+        margin-bottom: -9.5rem !important;
+	}
+	.tray5{
+		margin-left: -14% !important;
+        margin-bottom: -9.5rem !important;
+	}
+	.tray4{
+		margin-left: -10% !important;
+        transform: scale(0.8) !important;
+        margin-bottom: -9.5rem !important;
+	}
+	.tank2 .waterFlow{
+		margin-left: 18% !important;
+	}
+	.tank1 .waterFlow{
+		margin-left: -5% !important;
+	}
+	.indBoard{
+		top: 32% !important;
+	}
+	.valueBoard{
+		top: 34% !important;
+        left: 3%;
+	}
+    .leftTrays{
+        width: 20rem !important;
+    }
+    .rightTrays{
+        width: 20rem !important;
+    }
+    .light-row{
+        top: 10% !important;
+    }
+    .light-row img{
+        width: 5rem !important;
+    }
+    .light-left{
+        left: 18% !important;
+    }
+    .light-right{
+        right: 13% !important;
+    }
+    /* .tray-2,.tray-1,.tray4, .tray5{
+        display: none !important;
+    } */
+
+    .rightTrays img{
+        width: 20rem !important;
+    }
+     .leftTrays img{
+        width: 21rem !important;
+    }
+    
+    .waterFlow{
+        width: 275px !important; 
+    }
+    .tray2{
+        margin-left: 4% !important;
+        transform: scale(0.98) !important;
+    }
+    .tray1{
+        transform: scale(0.95) !important;
+        margin-left: 5% !important;
+    }
+    .tray0{
+       transform: scale(0.93) !important;
+    margin-left: 6% !important;
+    }
+    .tray-1{
+        transform: scale(0.91) !important;
+        margin-left: 7% !important;
+    }
+    .tray-2{
+        margin-bottom: -9.5rem !important;
+        transform: scale(0.9) !important;
+        margin-left: 8% !important;
+    }
+    .tray9{
+        margin-left: 0% !important;
+    }
+    .tray8{
+        transform: scale(0.95) !important;
+        margin-left: -3% !important;
+    }
+    div#effect3d{
+        transform: none !important;
+    }
+}
