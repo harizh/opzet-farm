@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@media (min-width: 1601px) {
+/* @media (min-width: 1601px) {
 	.leftTrays img{
         width: 24rem !important;
     }
@@ -71,7 +71,7 @@
         right: 16% !important;
     }
     
-}
+} */
 
 
 @media only screen and (min-width: 1401px) and (max-width: 1600px) {
@@ -82,7 +82,8 @@
 		top: 45% !important;
 	}
 	.valueBoard{
-		top: 48% !important;
+		top: -5% !important;
+        background-color: transparent !important;
 	}
 	.tank1{
 		bottom: 16% !important;
@@ -94,11 +95,16 @@
 		top: 12% !important;
 	}
 	.indBoard{
-		top: 24% !important;
+		top: 26% !important;
+        right: 0 !important;
 	}
+    #values{
+        margin-left: 10%;
+    }
 }
 
-@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+
+/* @media only screen and (min-width: 1201px) and (max-width: 1400px) {
     .leftTrays{
 		bottom: 10% !important;
         left: 9% !important;
@@ -141,7 +147,7 @@
 		top: 21% !important;
 	}
 	.valueBoard{
-		top: 34% !important;
+		top: 3% !important;
         left: 3%;
 	}
     .leftTrays{
@@ -162,7 +168,7 @@
     .light-right{
         right: 23% !important;
     }
-}
+} */
 @media only screen and (min-width: 998px) and (max-width: 1200px) {
     .leftTrays{
 		bottom: 14% !important;
@@ -365,7 +371,7 @@
         display: none !important;
     }
      div#effect3d{
-        display: none !important;
+        
     }
     .tank2{
         display: none !important;
@@ -378,7 +384,7 @@
         width: 70% !important;
     }
     .indBoard .bgWh{
-        width: 65%;
+        width: 48%;
         height: 7rem !important;
     }
     .indicator{
@@ -387,19 +393,14 @@
     }
     
     .leftTrays{
-		bottom: 8% !important;
+		bottom: 14% !important;
         left: 0% !important;
-		top: auto !important;
-	}
-	.rightTrays{
-		bottom: 10% !important;
-		right: 0% !important;
 		top: auto !important;
 	}
 	.tank1{
 		bottom: 10% !important;
         top: auto !important;
-        left: 16% !important;
+        left: 14% !important;
 	}
 	.tank2{
 		bottom: 12% !important;
@@ -431,26 +432,31 @@
 		margin-left: -5% !important;
 	}
 	.indBoard{
-		top: 32% !important;
+		top: 13.3% !important;
 	}
-	.valueBoard{
-		top: 34% !important;
-        left: 3%;
-	}
-    .leftTrays{
-        width: 20rem !important;
+    .waterFlow{
+            height: 110px !important;
     }
-    .rightTrays{
+	.valueBoard{
+		top: -7% !important;
+        left: -3%;
+        width: 58%;
+	}
+    .valueBoard .bgWh ul{
+        justify-content: center;
+        flex-direction: column !important;
+    }
+    .leftTrays{
         width: 20rem !important;
     }
     .light-row{
         top: 10% !important;
     }
     .light-row img{
-        width: 5rem !important;
+        width: 6rem !important;
     }
     .light-left{
-        left: 18% !important;
+        left: 36% !important;
     }
     .light-right{
         right: 13% !important;
@@ -469,26 +475,27 @@
     .waterFlow{
         width: 275px !important; 
     }
+    .tray3{
+        margin-left: 1% !important;
+        transform: scale(1) !important;
+    }
     .tray2{
         margin-left: 4% !important;
         transform: scale(0.98) !important;
     }
     .tray1{
-        transform: scale(0.95) !important;
+        transform: scale(0.96) !important;
         margin-left: 5% !important;
     }
     .tray0{
-       transform: scale(0.93) !important;
+       transform: scale(0.95) !important;
     margin-left: 6% !important;
     }
     .tray-1{
-        transform: scale(0.91) !important;
-        margin-left: 7% !important;
+        display: none;
     }
     .tray-2{
-        margin-bottom: -9.5rem !important;
-        transform: scale(0.9) !important;
-        margin-left: 8% !important;
+        display: none;
     }
     .tray9{
         margin-left: 0% !important;
@@ -501,3 +508,34 @@
         transform: none !important;
     }
 }
+
+
+.value img{
+    height: 2rem;
+    position: relative !important;
+    margin-right: 10px;
+}
+.value{
+    display: flex;
+    background-color: #fff;
+        box-shadow: 1px 1px 5px rgb(9 9 9 / 70%);
+    padding: 5px;
+    margin-right: 1rem;
+}
+.values{
+    margin-top: 10px;
+    display: flex;
+    position: absolute;
+}
+.value .v-amount{
+    font-size: 0.9rem;
+}
+.value .v-amount span{
+    font-weight: 700;
+}
+
+
+@media only screen and (min-width: 1980px) and (max-width: 1600px) {
+
+}
+

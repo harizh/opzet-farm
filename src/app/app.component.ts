@@ -11,7 +11,7 @@ export class AppComponent {
   public selectedIndex = 1; //defaultx
   public humidity = this.getRandomNum(100,50); //default
   public temarature =  this.getRandomNum(100,50); //default
-  public conductivity =  this.getRandomNum(1,10); //default
+  public conductivity =  1.2; //default
 
   public textDisplay = [
   {heading: "OPTIMUM", description: "Growth is high with the present optimum condition."},
@@ -22,7 +22,7 @@ export class AppComponent {
   generateRandom() {
     this.humidity  =  this.getRandomNum(100,50);
     this.temarature  =  this.getRandomNum(100,50);
-    this.conductivity  =  this.getRandomNum(100,50);
+    this.conductivity  =  this.getRandomNum(5000,1000);
   }
 
   getRandomNum(max,min){

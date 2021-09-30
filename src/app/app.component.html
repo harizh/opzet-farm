@@ -59,19 +59,22 @@
     </div>
 
     <div class="row d-flex justify-content-center valueBoard">
-      <div class="col-lg-2 col-md-4 bgWh" id="effect3d">
+      <div class="col-lg-6 col-md-4 bgWh" id="effect3d">
         <ul>
           <li>
             <img src="assets/images/humidity.png">
-            <div>Humidity<br><span>{{humidity}} %</span></div>
+            <div class="webvalues">Humidity<br><span>{{humidity}} %</span></div>
+            <div class="mobValues">Humi <span>{{humidity}} %</span></div>
           </li>
           <li>
             <img src="assets/images/thermometer.png">
-            <div>Temarature<br><span>{{temarature}} &#8451;</span></div>
+            <div class="webvalues">Temperature<br><span>{{temarature}} &#8451;</span></div>
+            <div class="mobValues">Temp <span>{{temarature}} &#8451;</span></div>
           </li>
           <li>
-            <img src="assets/images/conductivity.png">
-            <div>Conductivity<br><span>{{conductivity}} &#8451;</span></div>
+            <img src="assets/images/light.png">
+            <div class="webvalues">Intensity<br><span>{{conductivity}} Lux</span></div>
+            <div class="mobValues">Inten <span>{{conductivity}} Lux</span></div>
           </li>
         </ul>
       </div>
@@ -95,24 +98,44 @@
     </div>
     <div class="tank1">
       <div class="waterFlow"
-        style="width: 100%; height: 80px; width: 300px; overflow: hidden; border: 3px solid #dadada;">
+        style="width: 100%;  width: 420px; overflow: hidden;">
         <img src="assets/images/waterflow{{selectedIndex}}.gif" class="waterwave">
-        <img src="assets/images/tank{{selectedIndex}}.png" width="300" class="tankwater" style="height: 80px;">
+        <img src="assets/images/tank{{selectedIndex}}.png" class="tankwater">
+      </div>
+      <div class="values">
+         <div class="value">
+            <img src="assets/images/humidity.png">
+            <div class="v-amount">Temperature<br><span>26 &#8451;</span></div>
+         </div>
+        <div class="value">
+          <img src="assets/images/conductivity.png">
+          <div class="v-amount">Conductivity<br><span>{{conductivity}} µs/cm</span></div>
+        </div>
       </div>
     </div>
     <div class="rightTrays">
-      <img src="assets/images/hydroponic{{selectedIndex}}.png" class="tray4">
-      <img src="assets/images/hydroponic{{selectedIndex}}.png" class="tray5">
-      <img src="assets/images/hydroponic{{selectedIndex}}.png" class="tray6">
-      <img src="assets/images/hydroponic{{selectedIndex}}.png" class="tray7">
-      <img src="assets/images/hydroponic{{selectedIndex}}.png" class="tray8">
-      <img src="assets/images/hydroponic{{selectedIndex}}.png" class="tray9">
+      <img src="assets/images/hydroponicR{{selectedIndex}}.png" class="tray4">
+      <img src="assets/images/hydroponicR{{selectedIndex}}.png" class="tray5">
+      <img src="assets/images/hydroponicR{{selectedIndex}}.png" class="tray6">
+      <img src="assets/images/hydroponicR{{selectedIndex}}.png" class="tray7">
+      <img src="assets/images/hydroponicR{{selectedIndex}}.png" class="tray8">
+      <img src="assets/images/hydroponicR{{selectedIndex}}.png" class="tray9">
     </div>
     <div class="tank2">
       <div class="waterFlow"
         style="width: 100%; height: 80px; width: 300px; overflow: hidden; border: 3px solid #dadada;">
         <img src="assets/images/waterflow{{selectedIndex}}.gif" class="waterwave">
         <img src="assets/images/tank{{selectedIndex}}.png" width="300" class="tankwater" style="height: 80px;">
+      </div>
+      <div class="values" id="values2" style="margin-left: 10%;">
+        <div class="value">
+          <img src="assets/images/humidity.png">
+          <div class="v-amount">Temparature<br><span>{{humidity}} %</span></div>
+        </div>
+        <div class="value">
+          <img src="assets/images/conductivity.png">
+          <div class="v-amount">Conductivity<br><span>{{conductivity}} &#8451;</span></div>
+        </div>
       </div>
     </div>
   </div>
