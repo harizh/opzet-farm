@@ -1,42 +1,4 @@
-<!-- <div class="jumbotron text-center">
-  <h1>My First Bootstrap Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
-</div>
-  
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Column 3</h3>        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-  </div>
-</div> -->
-<!-- <div class="jumbotron">
-<p>
-  <button type="button" class="btn btn-outline-primary" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
-    aria-controls="collapseExample">
-    Toggle
-  </button>
-</p>
-<div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
-  <div class="card">
-    <div class="card-body">
-      <img src="assets/images/img1.jpg" width="200">
-    </div>
-  </div>
-</div>
-</div> -->
+<!-- 
 <div class="container-fluid p-0 bgImg">
   <div class="container" style="position: relative;  height: 100%;">
 
@@ -68,13 +30,13 @@
           </li>
           <li>
             <img src="assets/images/thermometer.png">
-            <div class="webvalues">Temperature<br><span>{{temarature}} &#8451;</span></div>
-            <div class="mobValues">Temp <span>{{temarature}} &#8451;</span></div>
+            <div class="webvalues">Temperature<br><span>{{atemp}} &#8451;</span></div>
+            <div class="mobValues">Temp <span>{{atemp}} &#8451;</span></div>
           </li>
           <li>
             <img src="assets/images/light.png">
-            <div class="webvalues">Intensity<br><span>{{conductivity}} Lux</span></div>
-            <div class="mobValues">Inten <span>{{conductivity}} Lux</span></div>
+            <div class="webvalues">Intensity<br><span>{{lum}} Lux</span></div>
+            <div class="mobValues">Inten <span>{{lum}} Lux</span></div>
           </li>
         </ul>
       </div>
@@ -82,8 +44,8 @@
 
     <div class="row light-row">
       <div class="container">
-        <img src="assets/images/light{{selectedIndex}}.png" class="light-left">
-        <img src="assets/images/light{{selectedIndex}}.png" class="light-right">
+        <img src="assets/images/light{{selectedLight}}.png" class="light-left">
+        <img src="assets/images/light{{selectedLight}}.png" class="light-right">
       </div>
     </div>
 
@@ -105,11 +67,11 @@
       <div class="values">
          <div class="value">
             <img src="assets/images/humidity.png">
-            <div class="v-amount">Temperature<br><span>26 &#8451;</span></div>
+            <div class="v-amount">Temperature<br><span>{{wtem}}&#8451;</span></div>
          </div>
         <div class="value">
           <img src="assets/images/conductivity.png">
-          <div class="v-amount">Conductivity<br><span>{{conductivity}} µs/cm</span></div>
+          <div class="v-amount">Conductivity<br><span>{{cond}} µs/cm</span></div>
         </div>
       </div>
     </div>
@@ -127,26 +89,66 @@
         <img src="assets/images/waterflow{{selectedIndex}}.gif" class="waterwave">
         <img src="assets/images/tank{{selectedIndex}}.png" width="300" class="tankwater" style="height: 80px;">
       </div>
-      <div class="values" id="values2" style="margin-left: 10%;">
-        <div class="value">
-          <img src="assets/images/humidity.png">
-          <div class="v-amount">Temparature<br><span>{{humidity}} %</span></div>
-        </div>
-        <div class="value">
-          <img src="assets/images/conductivity.png">
-          <div class="v-amount">Conductivity<br><span>{{conductivity}} &#8451;</span></div>
-        </div>
-      </div>
     </div>
   </div>
-  <div class="btn-div">
-    <div class="mauto">
-      <button class="btn btn-primary" (click)="selectedIndex=1;generateRandom()"
-        [ngClass]="{'selected': selectedIndex==1}">Button 1</button>
-      <button class="btn btn-primary" (click)="selectedIndex=2;generateRandom()"
-        [ngClass]="{'selected': selectedIndex==2}">Button 2</button>
-      <button class="btn btn-primary" (click)="selectedIndex=3;generateRandom()"
-        [ngClass]="{'selected': selectedIndex==3}">Button 3</button>
+</div> -->
+
+<div class="container-fluid p-0 bg-farm" style="background-image: url('assets/images/healthy1.jpg');">
+    <div class="row m-0">
+        <div class="container">
+          <div class="col-md-5 value-board">
+            <ul>
+              <li>
+                <img src="assets/images/humidity.png">
+                <div class="webvalues">Humidity<br><span>50 %</span></div>
+                <div class="mobValues">Humi <span>{{humidity}} %</span></div>
+              </li>
+              <li>
+                <img src="assets/images/thermometer.png">
+                <div class="webvalues">Temperature<br><span>27 &#8451;</span></div>
+                <div class="mobValues">Temp <span>{{atemp}} &#8451;</span></div>
+              </li>
+              <li>
+                <img src="assets/images/light.png">
+                <div class="webvalues">Intensity<br><span>4200 Lux</span></div>
+                <div class="mobValues">Inten <span>{{lum}} Lux</span></div>
+              </li>
+            </ul>
+            <span class="statusSpan">
+              Growth is high with the present optimum condition.
+            </span>
+          </div>
+        </div>
+
+        <div class="container water-temp">
+            <div class="col-md-2 cardW">
+                <ul>
+                  <li>
+                    <img src="assets/images/humidity.png">
+                    <div class="webvalues">Temperature<br><span>27 &#8451;</span></div>
+                    <div class="mobValues">Temp <span>27 &#8451;</span></div>
+                  </li>
+                  <li>
+                    <img src="assets/images/conductivity.png">
+                    <div class="webvalues">Conductivity<br><span>2.5 µs/cm</span></div>
+                    <div class="mobValues">Cond <span>2.5 µs/cm</span></div>
+                  </li>
+                </ul>
+            </div>
+            <div class="col-md-2 cardW">
+              <ul>
+                <li>
+                  <img src="assets/images/humidity.png">
+                  <div class="webvalues">Temperature<br><span>27 &#8451;</span></div>
+                  <div class="mobValues">Temp <span>27 &#8451;</span></div>
+                </li>
+                <li>
+                  <img src="assets/images/conductivity.png">
+                  <div class="webvalues">Conductivity<br><span>4200 Lux</span></div>
+                  <div class="mobValues">Cond <span>2.5 µs/cm</span></div>
+                </li>
+              </ul>
+            </div>
+        </div>
     </div>
-  </div>
 </div>

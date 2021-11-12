@@ -397,3 +397,148 @@ div#effect3d  {
 }
 }	
 
+
+.bg-farm{
+	height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+	background-position-y: -15vh;
+	position: relative;
+	.row{
+		.container{
+			display: flex;
+			width: 100%;
+			justify-content: center;
+			padding-top: 22vh;
+		}
+		.water-temp.container{
+			position: relative;
+			width: 100%;
+			top: 30vh;
+			display: flex;
+			justify-content: space-between;
+			.cardW{
+				ul{
+					list-style: none;
+					padding-left: 0;
+					display: flex;
+					justify-content: center;					
+					li{
+						display: flex;
+						margin-bottom: 1rem;
+						align-items: center;
+						margin: 1px;
+						padding: 10px;
+						background-color: transparent;
+						color: rgb(252, 252, 252);
+						border: 1px solid rgba(255, 255, 255, 0.192);
+						img{
+							width: auto;
+							height: 2rem;
+							margin-right: 10px;
+							filter: brightness(0) invert(1);
+						}
+						div{
+							font-size: 0.9rem;
+							font-weight: 400;
+							span{
+								font-weight: 500;
+							}
+						}
+					}
+				}
+				
+			}
+		}
+		
+	}
+}
+
+.value-board{
+	
+		position: relative;
+		&::before{
+			content: '';
+			position: absolute;
+			width: 2px;
+			background-color: #8f6363;
+			height: 20vh;
+			left: 10%;
+			top: -20vh;
+		}
+		&::after{
+			content: '';
+			position: absolute;
+			width: 2px;
+			background-color: #8f6363;
+			height: 20vh;
+			right: 10%;
+			top: -20vh;
+		}	
+	
+	ul{
+		list-style: none;
+		padding-left: 0;
+		display: flex;
+		justify-content: space-between;
+		position: relative;	
+		animation: shake 5s cubic-bezier(.36,.07,.19,.97) both infinite;
+		transform: translate3d(0, 0, 0);
+		backface-visibility: hidden;
+		perspective: 1000px;
+		margin-bottom: 5px;
+		
+		li{
+			display: flex;
+			margin-bottom: 1rem;
+			align-items: center;
+			margin: 1px;
+			padding: 10px 15px;
+			background-color: #fff;
+			img{
+				width: auto;
+				height: 2rem;
+				margin-right: 10px;
+			}
+			div{
+				font-size: 0.9rem;
+				font-weight: 500;
+				span{
+					font-weight: 900;
+				}
+			}
+		}
+	}
+	.statusSpan{
+		display: block;
+		text-align: center;
+		background-color: green;
+		padding: 3px;
+    	font-size: 0.9rem;
+		color: #fff;
+	}
+	
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(0.5px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(1px, 0, 0);
+  }
+}
+
+
+
+

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ApicallService} from './apicall.service';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,51 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'opzet-farm';
+
+  public humidity; //default
+  public atemp;
+  public cond;
+  public growth;
+  public lum;
+  public wtem;
+  public selectedIndex = 1;
+  public selectedLight = 1;
+
+  constructor(private getApi : ApicallService) {}
+  values=[];
+   ngOnInit(){
+     this.getApi.getData().subscribe((res)=>{       
+       this.values=res;
+       console.log(this.values);
+       this.humidity=res['ahum'];
+       this.atemp=res['atemp'];
+       this.cond=res['cond'];
+       this.growth=res['growth'];
+       this.lum=res['lum'];
+       this.wtem=res['wtem'];
+          if ( this.growth == 'low') 
+          {
+              this.selectedIndex = 2;
+          }
+          if ( this.growth == 'critical') 
+          {
+              this.selectedIndex = 3;
+          }
+          
+
+          if ( this.lum >= 1000) 
+          {
+              this.selectedLight = 1;
+          }
+          else if ( this.lum < 1000) 
+          {
+              this.selectedLight = 3;
+          }
+     });
+   };
+
   public isCollapsed = false;
-  public selectedIndex = 1; //defaultx
-  public humidity = this.getRandomNum(100,50); //default
+   //defaultx
   public temarature =  this.getRandomNum(100,50); //default
   public conductivity =  1.2; //default
 
@@ -20,9 +63,9 @@ export class AppComponent {
   ];
 
   generateRandom() {
-    this.humidity  =  this.getRandomNum(100,50);
-    this.temarature  =  this.getRandomNum(100,50);
-    this.conductivity  =  this.getRandomNum(5000,1000);
+    // this.humidity  =  this.getRandomNum(100,50);
+    // this.temarature  =  this.getRandomNum(100,50);
+    // this.conductivity  =  this.getRandomNum(5000,1000);
   }
 
   getRandomNum(max,min){
