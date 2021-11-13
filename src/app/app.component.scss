@@ -517,6 +517,7 @@ div#effect3d  {
 		padding: 3px;
     	font-size: 0.9rem;
 		color: #fff;
+		margin-bottom: 2px;
 	}
 	
 }
@@ -537,6 +538,35 @@ div#effect3d  {
   40%, 60% {
     transform: translate3d(1px, 0, 0);
   }
+}
+
+@media only screen and (max-width: 768px){
+	.bg-farm{
+		background-position-y: 0;
+		background-position-x: -30vh;
+	}
+	.value-board{
+		padding: 0;
+	}
+	.bg-farm{
+		.row{
+			.water-temp.container{
+				top: 15vh;
+				
+				.cardW{
+					ul{
+						display: flex;
+						flex-direction: column;
+						width: 50%;
+					}
+				}
+				.rightC{
+					display: none;
+				}
+			}
+		}
+	}
+	
 }
 
 
